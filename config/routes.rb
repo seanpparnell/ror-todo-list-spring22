@@ -1,13 +1,18 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  
   namespace :api do
     resources :lists do
       resources :todos
     end
 
+    resources :todos, execept: [:index, :show, :update, :create, :destroy] do
+      resources :notes 
+    end
+
+    resources :notes, execept: [:index, :show, :update, :create, :destroy] do
+      resources :comments 
+    end
 
   end
+
 end
