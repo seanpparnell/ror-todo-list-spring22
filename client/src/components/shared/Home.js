@@ -1,8 +1,12 @@
+import '../../App.css';
+import { MainHeader } from '../styles/shared';
 
 const Home = () => (
   <>
-    <h1>Welcome to TodoList!</h1>
-
+    {/* <h1 style={{ margin: '0 auto', fontWeight: 'light', textAlign: 'center' }}>Welcome to TodoList!</h1> */}
+    {/* <h1 style={styles.header}>Welcome to TodoList!</h1> */}
+    {/* <h1 className='App-header'>Welcome to TodoList!</h1> */}
+    <MainHeader>Welcome <br /> to <br /> TodoList!</MainHeader>
     <h2>Come see our Features!</h2>
     <h3>
       Spicy jalapeno bacon
@@ -53,5 +57,18 @@ const Home = () => (
     </div>
   </>
 )
+
+const styles = {
+  header: {
+    textAlign: 'center',
+    margin: '0 auto',
+    fontWeight: 'light',
+  },
+  subHeader: {
+    textAlign: 'left',
+    fontWeight: 'light',
+    fontSize: '12px'
+  }
+}
 
 export default Home;

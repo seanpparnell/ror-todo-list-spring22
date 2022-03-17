@@ -1,5 +1,5 @@
-class Todo < ApplicationRecord
-  belongs_to :list
-  has_many :notes, dependent: :destroy
-  validates :title, presence: true
+class Note < ApplicationRecord
+  belongs_to :todo
+
+  validates :subject, :body, presence: true
 end
