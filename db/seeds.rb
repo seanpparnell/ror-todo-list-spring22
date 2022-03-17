@@ -1,3 +1,4 @@
+Note.delete_all
 Todo.delete_all
 List.delete_all 
 
@@ -12,6 +13,11 @@ List.delete_all
       complete: Faker::Boolean.boolean,
       list_id: list.id
     )
+    Note.create(
+      subject: Faker::Kpop.boy_bands,
+      body: Faker::Lorem.paragraph,
+      todo_id: todo.id
+    )
   end 
 end
 
@@ -23,4 +29,9 @@ end
 puts "Number of todo: #{Todo.all.count}"
 Todo.all.each do |todo|  
   puts "#{todo.id}, title: #{todo.title} complete: #{todo.complete}"
+end
+
+puts "Number of notes: #{Note.all.count}"
+Note.all.each do |note|  
+  puts "#{note.id}, Subject: #{note.subject} body: #{note.body}"
 end
