@@ -6,7 +6,7 @@ const Home = () => (
     {/* <h1 style={{ margin: '0 auto', fontWeight: 'light', textAlign: 'center' }}>Welcome to TodoList!</h1> */}
     {/* <h1 style={styles.header}>Welcome to TodoList!</h1> */}
     {/* <h1 className='App-header'>Welcome to TodoList!</h1> */}
-    <MainHeader>Welcome <br /> to <br /> TodoList!</MainHeader>
+    <MainHeader bg>Welcome <br /> to <br /> TodoList!</MainHeader>
     <h2>Come see our Features!</h2>
     <h3>
       Spicy jalapeno bacon

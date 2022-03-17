@@ -1,10 +1,13 @@
+import { AboutHeader, AboutH1, AboutP } from "../styles/shared";
 
 const About = () => (
   <>
-    <h1>About the app</h1>
-    <p>
-      Swine flank doner ball tip. Bacon tail meatball kevin ham ball tip, alcatra kielbasa rump chislic tenderloin burgdoggen andouille. Shankle short ribs burgdoggen brisket, cow tail venison corned beef ball tip sirloin leberkas bacon jowl shank prosciutto. Chicken chislic bacon cow short loin, ham hock flank kielbasa boudin shoulder ball tip beef ribs beef brisket pastrami. Tongue tail pork sirloin chicken tri-tip. Meatloaf pork chop pig shoulder leberkas fatback sirloin boudin swine porchetta meatball short ribs pork belly venison tenderloin.
-    </p>
+    <AboutHeader>
+      <AboutH1>About the app</AboutH1>
+      <AboutP>
+        Swine flank doner ball tip. Bacon tail meatball kevin ham ball tip, alcatra kielbasa rump chislic tenderloin burgdoggen andouille. Shankle short ribs burgdoggen brisket, cow tail venison corned beef ball tip sirloin leberkas bacon jowl shank prosciutto. Chicken chislic bacon cow short loin, ham hock flank kielbasa boudin shoulder ball tip beef ribs beef brisket pastrami. Tongue tail pork sirloin chicken tri-tip. Meatloaf pork chop pig shoulder leberkas fatback sirloin boudin swine porchetta meatball short ribs pork belly venison tenderloin.
+      </AboutP>
+    </AboutHeader>
 
     <h2>Meet the Team!</h2>
     <div>
