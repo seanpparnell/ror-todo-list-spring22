@@ -48,7 +48,10 @@ const Todo = ({ id, title, complete, updateTodo, deleteTodo }) => {
           >
             Delete
           </button>
-          <Link to={`/todos/${id}/notes`}>
+          <Link 
+            to={`/todos/${id}/notes`}
+            state={{ todoId: id, todoTitle: title }}
+          >
             <button>
               Notes
             </button>

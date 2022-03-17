@@ -3,7 +3,7 @@ class Api::NotesController < ApplicationController
   before_action :set_note, only: [:update, :show, :destroy]
 
   def index
-    render json: @todos.notes
+    render json: @todo.notes
   end
 
   def show
